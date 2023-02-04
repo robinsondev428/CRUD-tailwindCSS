@@ -20,7 +20,7 @@ export const AddPlayerForm = ({addPlayer}:FormProps) => {
 	}
 	return (
 		<>
-			<form onSubmit={handleSubmit}>
+			<form onSubmit={handleSubmit} className='flex justify-center'>
 				<input
 					className='bg-white w-1/6 border border-sky-300 rounded-md p-2 mr-2' 
 					type="text" 
@@ -45,7 +45,7 @@ export const AddPlayerForm = ({addPlayer}:FormProps) => {
 					onChange={handleChange}
 					value={player.position}	
 				/>
-				<button className=''>Add this player</button>
+				<button className='bg-transparent hover:bg-cyan-500 text-cyan-700 hover:text-white border border-cyan-500 hover:border-transparent p-2 rounded-md'>Add this player</button>
 			</form>
 		</>
 	)

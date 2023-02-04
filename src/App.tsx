@@ -19,6 +19,7 @@ const App = () => {
 
   return (
     <div className="m-4">
+      <h1 className='text-xl font-semibold mb-2 text-cyan-400 text-center'>Register Players</h1>
       <AddPlayerForm addPlayer={addPlayer} />
     </div>
   );
