@@ -10,12 +10,12 @@ export const AddPlayerForm = ({addPlayer}:FormProps) => {
 		position: '',
 	};
 	const [player, setPlayer] = useState(initialValue);
-	const handleSubmit = (e:any) => {
+	const handleSubmit = (e) => {
 		e.preventDefault();
 		addPlayer(player);
 		setPlayer(initialValue);
 	};
-	const handleChange = (e:any)=>{
+	const handleChange = (e)=>{
 		setPlayer({...player, [e.target.name]:e.target.value});
 	}
 	return (
